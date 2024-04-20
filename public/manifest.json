@@ -1,0 +1,9 @@
+{
+	"name": "BWCC Recruitment",
+	"short_name": "BWCC Recruitment",
+	"theme_color": "#141930",
+	"background_color": "#141930",
+	"display": "standalone",
+	"scope": "./",
+	"start_url": "./"
+}
