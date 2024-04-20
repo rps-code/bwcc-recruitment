@@ -8,7 +8,7 @@ const app = express()
 const port = 3000
 
 const corsOptions = {
-	origin: `${process.env.VITE_FE_URL}:5173`,
+	origin: `${process.env.VITE_FE_URL}`,
 	optionsSuccessStatus: 200,
 }
 

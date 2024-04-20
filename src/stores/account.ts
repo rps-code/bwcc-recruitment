@@ -32,7 +32,8 @@ export const useAccountStore = defineStore('account', {
 
 		async fetchSteamData(apiPath: string, handler: (data: any) => void) {
 			const steamID = this.extractSteamID()
-			const apiUrl = import.meta.env.VITE_API_URL
+			const apiUrl =
+				import.meta.env.VITE_API_URL || 'https://bwcc-recruitment.vercel.app'
 			try {
 				const response = await axios.post(`${apiUrl}/api/${apiPath}`, {
 					steamID,
