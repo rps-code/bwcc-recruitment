@@ -1,6 +1,6 @@
 {
 	"version": 2,
-	"rewrites": [
+	"routes": [
 		{ "src": "/api/(.*)", "dest": "/api" },
 		{ "src": "/manifest.json", "dest": "/public/manifest.json" }
 	]
