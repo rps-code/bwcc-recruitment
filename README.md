@@ -1,8 +1,6 @@
-# Emoji Match
+# BWCC Recruitment
 
-A small, simple emoji match game made for fun in a bit of free time to practice Pinia states.
-
-<img align="center" width="300" src="https://i.imgur.com/45vpCmq.png" />
+A side project for HLL BWCC
 
 ## 📦 Getting Started
 
