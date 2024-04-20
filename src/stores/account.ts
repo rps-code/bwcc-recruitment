@@ -32,11 +32,11 @@ export const useAccountStore = defineStore('account', {
 
 		async fetchSteamData(apiPath: string, handler: (data: any) => void) {
 			const steamID = this.extractSteamID()
+			const apiUrl = import.meta.env.API_URL
 			try {
-				const response = await axios.post(
-					`http://localhost:3000/api/${apiPath}`,
-					{ steamID }
-				)
+				const response = await axios.post(`${apiUrl}/api/${apiPath}`, {
+					steamID,
+				})
 				handler(response.data)
 			} catch (error) {
 				console.error(`Failed to fetch data from ${apiPath}`, error)
